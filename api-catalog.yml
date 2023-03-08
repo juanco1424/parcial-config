@@ -6,9 +6,9 @@ spring:
     name: api-catalog
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3307/databaseParcial?createDatabaseIfNotExist=true&useUnicode=true&amp&characterEncoding=utf-8&autoReconnect=true
-    username: user
-    password: password
+    url: jdbc:mysql://localhost:3307/movie-dev?createDatabaseIfNotExist=true&useUnicode=true&amp&characterEncoding=utf-8&autoReconnect=true
+    username: usr-movie
+    password: pwd-movie
   jpa:
     properties:
       hibernate:
