@@ -20,7 +20,7 @@ spring:
 
 info:
   application:
-    name: api-catalog
+    name: api-movie
 
 eureka:
   instance:
