@@ -1,0 +1,42 @@
+server:
+  port: ${PORT:${SERVER_PORT:8080}}
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: id-api-catalog
+          uri: lb://api-catalog
+          predicates:
+            - Path=/api/catalog/**
+        - id: id-api-movie
+          uri: lb://api-movie
+          predicates:
+            - Path=/api/movie/**
+
+info:
+  app:
+    name: ${spring.application.name}
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoint:
+    gateway:
+      enable: true
+  endpoints:
+    web:
+      exposure:
+        include: gateway
