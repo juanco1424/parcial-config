@@ -5,9 +5,9 @@ spring:
     name: api-series
   data:
     mongodb:
-      username: usr-serie-mongo
-      password: pwd-serie-mongo
-      database: serie-dev-mongo
+      username: usr-series-mongo
+      password: pwd-series-mongo
+      database: series-dev-mongo
       port: 27017
       host: localhost
   jpa:
@@ -20,8 +20,6 @@ info:
     name: api-series
 
 eureka:
-  healthcheck:
-    enabled: true
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
