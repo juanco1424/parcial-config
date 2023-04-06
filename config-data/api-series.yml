@@ -3,21 +3,13 @@ server:
 spring:
   application:
     name: api-series
+  mongodb:
+    embedded:
+      version: 3.6.0
   data:
     mongodb:
-      username: usr-series-mongo
-      password: pwd-series-mongo
-      database: series-dev-mongo
+      database: test
       port: 27017
-      host: localhost
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
-
-info:
-  application:
-    name: api-series
 
 eureka:
   instance:
