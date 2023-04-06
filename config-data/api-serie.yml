@@ -3,10 +3,10 @@ server:
 
 spring:
   application:
-    name: api-series
+    name: api-serie
   mongodb:
     embedded:
-      version: 3.6.0
+      version: 4.0.2
   data:
     mongodb:
       database: test
@@ -14,7 +14,7 @@ spring:
 
 info:
   application:
-    name: api-series
+    name: api-serie
 
 eureka:
   instance:
