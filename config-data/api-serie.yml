@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: api-serie
+    name: api-series
   mongodb:
     embedded:
       version: 3.6.0
@@ -14,7 +14,7 @@ spring:
 
 info:
   application:
-    name: api-serie
+    name: api-series
 
 eureka:
   instance:
