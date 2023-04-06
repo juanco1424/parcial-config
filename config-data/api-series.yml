@@ -12,6 +12,10 @@ spring:
       database: test
       port: 27017
 
+info:
+  application:
+    name: api-series
+
 eureka:
   instance:
     hostname: localhost
