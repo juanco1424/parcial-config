@@ -4,17 +4,13 @@ server:
 spring:
   application:
     name: api-catalog
+  mongodb:
+    embedded:
+      version: 4.0.2
   data:
     mongodb:
-      username: usr-catalog-mongo
-      password: pwd-catalog-mongo
-      database: catalog-dev-mongo
-      port: 27018
-      host: localhost
-    jpa:
-      hibernate.ddl-auto: update
-      generate-ddl: true
-      show-sql: true
+      database: dbCatalog
+      port: 27017
 info:
   application:
     name: api-catalog
