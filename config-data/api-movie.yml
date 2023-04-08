@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: api-movie
+  zipkin:
+    baseUrl: http://localhost:9411/
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3307/movie-dev?createDatabaseIfNotExist=true&useUnicode=true&amp&characterEncoding=utf-8&autoReconnect=true
