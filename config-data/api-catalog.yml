@@ -40,6 +40,8 @@ resilience4j:
           wait-duration: 2s
           retry-exceptions:
             - java.net.ConnectException
+            - java.io.IOException
+            - java.net.SocketTimeoutException
   circuitbreaker:
     configs:
       default:
